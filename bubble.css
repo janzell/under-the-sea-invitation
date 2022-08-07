@@ -1,0 +1,148 @@
+/* Main bubbles */
+
+.bubble-holder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .bubble-1 {
+    left: 8%;
+    animation-delay: 1s;
+  }
+  .bubble-1 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 0s;
+  }
+  
+  .bubble-2 {
+    left: 40%;
+    animation-delay: 2s;
+  }
+  .bubble-2 .bubble-animation-y{
+    animation-duration: 6s;
+    animation-delay: 2s;
+  }
+  
+  .bubble-3 {
+    right: 15%;
+    animation-delay: 1s;
+  }
+  .bubble-3 .bubble-animation-y{
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+  }
+  
+  .bubble-4 {
+    left: 8%; 
+    animation-delay: 2s;
+  }
+  .bubble-4 .bubble-animation-y{
+    animation-duration: 6s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-5 {
+    left: 40%; 
+    animation-delay: 1s;
+  }
+  .bubble-5 .bubble-animation-y{
+    animation-duration: 5s;
+    animation-delay: 0;
+  }
+  
+  .bubble-6 {
+    left: 45%;
+    animation-delay: 2s;
+  }
+  .bubble-6 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 3.5s;
+  }
+  
+  .bubble-7 {
+    right: 15%;
+    animation-delay: 1s;
+  }
+  .bubble-7 .bubble-animation-y{
+    animation-duration: 5.5s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-8 {
+    right: 5%;
+    animation-delay: 2s;
+  }
+  .bubble-8 .bubble-animation-y{
+    animation-duration: 7s;
+    animation-delay: 3s;
+  }
+  
+  .bubble-9 {
+    top: -375px;
+    left: 14%;  
+  }
+  
+  .bubble-10 {
+    bottom: -350px;
+    right: -50px;	
+  }
+  
+  .bubble-container{
+    position: absolute;
+    bottom: -250px; 
+  }
+  
+  .bubble-large, .bubble-small {
+    border-radius: 100%;  
+    border-radius: 100%;
+    box-shadow: 0 20px 30px rgb(255 241 241 / 40%), inset 0px 10px 30px 5px rgb(214 235 255);
+  }
+  
+  .bubble-large {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bubble-small {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .bubble-animation-x { 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bubbleXAnimFrames;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+  }
+  
+  .bubble-animation-y { 
+    animation-iteration-count: infinite;
+    animation-name: bubbleYAnimFrames;
+    animation-timing-function: linear;
+  }
+  
+  
+   @keyframes bubbleXAnimFrames {
+    0% {
+      transform: translateX(0);
+     }
+    100% {
+      transform: translateX(50px);
+     }
+  }
+  
+   @keyframes bubbleYAnimFrames {
+    0% {
+      transform: translateY(0);
+     }
+    50% {
+      opacity: 85%;
+     }
+    100% {
+      transform: translateY(-1250px);
+      opacity: 0;
+     }
+  }

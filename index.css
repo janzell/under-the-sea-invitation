@@ -1,0 +1,102 @@
+html,body {
+    height: 100%;
+    padding:0;
+    margin:0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Just Another Hand', cursive;
+  color: #fff;
+}
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+#container {
+    background: url('./4162773.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: 30px;
+}
+
+.head {
+    width: 800px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.head img {
+    width: 50px;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 76px;
+    color: #ff772f;
+    font-family: 'Irish Grover', cursive;
+    background-color: #b6dfff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: rgba(243, 249, 255, 0.5) 3px 5px 1px;
+}
+
+.name {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 200px;
+    color: #5453ba;
+    text-shadow: rgb(255 255 255 / 43%) -16px -15px 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.one {
+    font-size: 200px;
+    padding-top: 30px;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-shadow: rgb(255 119 47) 4px 7px 1px;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    margin-left: -30px;
+}
+
+.join {
+    font-size: 50px;
+    color: #d03465;
+}
+
+.venue {
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 38px;
+    text-shadow: rgb(0 0 0 / 43%) 2px 0px 1px;
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
