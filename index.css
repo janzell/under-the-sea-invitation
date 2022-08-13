@@ -19,20 +19,23 @@ h1 {
 }
 
 #container {
-    background: url('./4162773.jpg') no-repeat;
+    background: url('./4162773.jpg') no-repeat center;
     background-size: cover;
     min-height: 100%;
     height: auto;
     text-align: center;
     font-size: 30px;
+    padding-bottom: 30px;
 }
 
 .head {
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding: 100px 5% 30px;
 }
 
 .head img {
@@ -40,9 +43,8 @@ h1 {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 3rem;
     text-align: center;
-    margin-top: 76px;
     color: #ff772f;
     font-family: 'Irish Grover', cursive;
     background-color: #b6dfff;
@@ -55,11 +57,12 @@ h1 {
 .name {
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
-    font-size: 200px;
+    font-size:13rem;
     color: #5453ba;
-    text-shadow: rgb(255 255 255 / 43%) -16px -15px 1px;
+    text-shadow: rgb(250 255 255) -2px 7px 1px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    line-height: 7rem;
 }
 
 .one {
@@ -88,10 +91,53 @@ h1 {
     z-index: 2;
     margin-top: 100px;
     color: #fff;
-    font-size: 38px;
-    text-shadow: rgb(0 0 0 / 43%) 2px 0px 1px;
+    font-size: 20px;
+    font-family: monospace;
+    letter-spacing: -2px;
 }
 
+.ocassion {
+    text-shadow: rgb(34 189 206) -2px 6px 1px;
+}
+
+.datetime {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: monospace;
+    letter-spacing: -2px;
+}
+
+
+/* Utilities */
+
+.ucase {
+    text-transform: uppercase;
+}
+
+.mt-50 {
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .head img {
+        width: 30px;
+    }
+
+    .name {
+        font-size:10rem;
+    }
+
+    .join {
+        text-shadow: rgb(255 255 255) 1px 1px 1px;
+    }
+}
+
+/* Animation */
 @keyframes waviy {
     0%,40%,100% {
       transform: translateY(0)
